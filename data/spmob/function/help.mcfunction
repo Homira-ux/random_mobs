@@ -3,7 +3,20 @@
 tellraw @s [{"text":"========================================","color":"gold"}]
 tellraw @s [{"text":"[SpMob] ","color":"gold","bold":true},{"text":"定期モブスポーンシステム","color":"white"}]
 tellraw @s [{"text":"========================================","color":"gold"}]
-
+tellraw @s ""
+tellraw @s [{"text":"📦 データパックについて","color":"green","bold":true}]
+tellraw @s [{"text":"  指定したエリア内に定期的にモブをスポーンさせる","color":"white"}]
+tellraw @s [{"text":"  システムです。スポーン間隔、確率、NBTなどを","color":"white"}]
+tellraw @s [{"text":"  カスタマイズできます。レアモブ機能も搭載。","color":"white"}]
+tellraw @s ""
+tellraw @s [{"text":"🎮 基本的な使い方","color":"green","bold":true}]
+tellraw @s [{"text":"  1. ","color":"gray"},{"text":"set_pos1","color":"aqua"},{"text":" と ","color":"gray"},{"text":"set_pos2","color":"aqua"},{"text":" で範囲を設定","color":"gray"}]
+tellraw @s [{"text":"  2. ","color":"gray"},{"text":"set_mob","color":"aqua"},{"text":" でモブの種類を設定","color":"gray"}]
+tellraw @s [{"text":"  3. ","color":"gray"},{"text":"set_interval","color":"aqua"},{"text":" などでスポーン設定","color":"gray"}]
+tellraw @s [{"text":"  4. ","color":"gray"},{"text":"start","color":"green"},{"text":" でスポーン開始！","color":"gray"}]
+tellraw @s ""
+tellraw @s [{"text":"📋 コマンド一覧","color":"green","bold":true}]
+tellraw @s ""
 tellraw @s [{"text":" 座標設定","color":"yellow"}]
 tellraw @s [{"text":"  "},{"text":"[第1点設定]","color":"aqua","clickEvent":{"action":"suggest_command","value":"/function spmob:command/set_pos1"},"hoverEvent":{"action":"show_text","contents":"クリックしてコマンドを入力"}},{"text":" - 現在位置を第1点として設定","color":"gray"}]
 tellraw @s [{"text":"  "},{"text":"[第2点設定]","color":"aqua","clickEvent":{"action":"suggest_command","value":"/function spmob:command/set_pos2"},"hoverEvent":{"action":"show_text","contents":"クリックしてコマンドを入力"}},{"text":" - 現在位置を第2点として設定","color":"gray"}]
@@ -28,5 +41,8 @@ tellraw @s [{"text":"  "},{"text":"[停止]","color":"red","clickEvent":{"action
 tellraw @s [{"text":"  "},{"text":"[リセット]","color":"gold","clickEvent":{"action":"suggest_command","value":"/function spmob:command/reset"},"hoverEvent":{"action":"show_text","contents":"クリックして実行"}},{"text":" - すべての設定をリセット","color":"gray"}]
 
 tellraw @s [{"text":" その他","color":"yellow"}]
-tellraw @s [{"text":"  "},{"text":"[可視化切替]","color":"aqua","clickEvent":{"action":"suggest_command","value":"/function spmob:command/toggle_visual"},"hoverEvent":{"action":"show_text","contents":"クリックして実行"}},{"text":" - 範囲の可視化をON/OFF","color":"gray"}]tellraw @s [{"text":"  "},{"text":"[デバッグ切替]","color":"aqua","clickEvent":{"action":"suggest_command","value":"/function spmob:command/toggle_debug"},"hoverEvent":{"action":"show_text","contents":"クリックして実行"}},{"text":" - デバッグログをON/OFF","color":"gray"}]
+tellraw @s [{"text":"  "},{"text":"[可視化切替]","color":"aqua","clickEvent":{"action":"suggest_command","value":"/function spmob:command/toggle_visual"},"hoverEvent":{"action":"show_text","contents":"クリックして実行"}},{"text":" - 範囲の可視化をON/OFF","color":"gray"}]
+tellraw @s [{"text":"  "},{"text":"[デバッグ切替]","color":"aqua","clickEvent":{"action":"suggest_command","value":"/function spmob:command/toggle_debug"},"hoverEvent":{"action":"show_text","contents":"クリックして実行"}},{"text":" - デバッグログをON/OFF","color":"gray"}]
+tellraw @s ""
+tellraw @s [{"text":"📖 詳細なコマンドリファレンスは COMMANDS.md を参照","color":"gray","italic":true}]
 tellraw @s [{"text":"========================================","color":"gold"}]

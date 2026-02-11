@@ -78,4 +78,4 @@ data remove storage spmob:config nbt_data
 
 # 読み込み完了メッセージ
 tellraw @a [{"text":"[SpMob] ","color":"gold","bold":true},{"text":"定期モブスポーンシステムを読み込みました","color":"white","bold":false}]
-tellraw @a [{"text":"[SpMob] ","color":"gold","bold":true},{"text":"ヘルプ: ","color":"gray","bold":false},{"text":"/function spmob:command/help","color":"aqua","bold":false,"clickEvent":{"action":"suggest_command","value":"/function spmob:command/help"}}]
+tellraw @a [{"text":"[SpMob] ","color":"gold","bold":true},{"text":"ヘルプ: ","color":"gray","bold":false},{"text":"/function spmob:help","color":"aqua","bold":false,"clickEvent":{"action":"suggest_command","value":"/function spmob:command/help"}}]
