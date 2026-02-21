@@ -1,8 +1,8 @@
-# €ƒŒƒAƒ‚ƒu‚ÌNBTƒf[ƒ^‚ğİ’èiƒ}ƒNƒŠÖ”j
-# g‚¢•û: /function spmob:command/set_nbt_semi_rare {nbt:{CustomName:'{"text":"SemiRare"}'}}
-# ƒNƒŠƒA: /function spmob:command/set_nbt_semi_rare {nbt:{}}
+# æº–ãƒ¬ã‚¢ãƒ¢ãƒ–ã®NBTãƒ‡ãƒ¼ã‚¿ã‚’è¨­å®šï¼ˆãƒã‚¯ãƒ­é–¢æ•°ï¼‰
+# ä½¿ã„æ–¹: /function spmob:command/set_nbt_semi_rare {nbt:{CustomName:'{"text":"SemiRare"}'}}
+# ã‚¯ãƒªã‚¢: /function spmob:command/set_nbt_semi_rare {nbt:{}}
 
-# ƒXƒgƒŒ[ƒW‚ÌƒŒƒAƒ‚ƒu”z—ñ[1]‚ÉNBTƒf[ƒ^‚ğ•Û‘¶
+# ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ã®ãƒ¬ã‚¢ãƒ¢ãƒ–é…åˆ—[1]ã«NBTãƒ‡ãƒ¼ã‚¿ã‚’ä¿å­˜
 $data modify storage spmob:config rare_mobs[1].nbt_data set value $(nbt)
 
-tellraw @s [{"text":"[SpMob] ","color":"gold","bold":true},{"text":"€ƒŒƒAƒ‚ƒu‚ÌNBTƒf[ƒ^‚ğİ’è‚µ‚Ü‚µ‚½: ","color":"white"},{"nbt":"rare_mobs[1].nbt_data","storage":"spmob:config","color":"aqua"}]
+tellraw @s [{"text":"[SpMob] ","color":"gold","bold":true},{"text":"æº–ãƒ¬ã‚¢ãƒ¢ãƒ–ã®NBTãƒ‡ãƒ¼ã‚¿ã‚’è¨­å®šã—ã¾ã—ãŸ: ","color":"white"},{"nbt":"rare_mobs[1].nbt_data","storage":"spmob:config","color":"aqua"}]

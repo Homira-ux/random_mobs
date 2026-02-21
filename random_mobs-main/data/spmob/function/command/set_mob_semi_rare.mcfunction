@@ -1,6 +1,6 @@
-# €ƒŒƒAƒ‚ƒu‚Ìí—Ş‚ğİ’èiƒ}ƒNƒŠÖ”j
+# æº–ãƒ¬ã‚¢ãƒ¢ãƒ–ã®ç¨®é¡ã‚’è¨­å®šï¼ˆãƒã‚¯ãƒ­é–¢æ•°ï¼‰
 
-# ƒXƒgƒŒ[ƒW‚ÌƒŒƒAƒ‚ƒu”z—ñ[1]‚Éƒ‚ƒuƒ^ƒCƒv‚ğ•Û‘¶
+# ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ã®ãƒ¬ã‚¢ãƒ¢ãƒ–é…åˆ—[1]ã«ãƒ¢ãƒ–ã‚¿ã‚¤ãƒ—ã‚’ä¿å­˜
 $data modify storage spmob:config rare_mobs[1].mob_type set value "$(mob)"
 
-$tellraw @s [{"text":"[SpMob] ","color":"gold","bold":true},{"text":"€ƒŒƒAƒ‚ƒu‚ğİ’è: ","color":"white"},{"text":"$(mob)","color":"yellow"}]
+$tellraw @s [{"text":"[SpMob] ","color":"gold","bold":true},{"text":"æº–ãƒ¬ã‚¢ãƒ¢ãƒ–ã‚’è¨­å®š: ","color":"white"},{"text":"$(mob)","color":"yellow"}]

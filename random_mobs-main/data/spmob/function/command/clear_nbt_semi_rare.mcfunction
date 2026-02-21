@@ -1,6 +1,6 @@
-# €ƒŒƒAƒ‚ƒu‚ÌNBTƒf[ƒ^‚ðƒNƒŠƒA
-# NBT–¢Ý’èó‘Ô‚É‚·‚é‚½‚ßAƒL[‚ðíœ‚·‚é
+# æº–ãƒ¬ã‚¢ãƒ¢ãƒ–ã®NBTãƒ‡ãƒ¼ã‚¿ã‚’ã‚¯ãƒªã‚¢
+# NBTæœªè¨­å®šçŠ¶æ…‹ã«ã™ã‚‹ãŸã‚ã€ã‚­ãƒ¼ã‚’å‰Šé™¤ã™ã‚‹
 
 data remove storage spmob:config rare_mobs[1].nbt_data
 
-tellraw @s [{"text":"[SpMob] ","color":"gold","bold":true},{"text":"€ƒŒƒAƒ‚ƒu‚ÌNBTƒf[ƒ^‚ðƒNƒŠƒA‚µ‚Ü‚µ‚½","color":"white"}]
+tellraw @s [{"text":"[SpMob] ","color":"gold","bold":true},{"text":"æº–ãƒ¬ã‚¢ãƒ¢ãƒ–ã®NBTãƒ‡ãƒ¼ã‚¿ã‚’ã‚¯ãƒªã‚¢ã—ã¾ã—ãŸ","color":"white"}]

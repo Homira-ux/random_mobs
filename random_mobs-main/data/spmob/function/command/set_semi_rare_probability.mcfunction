@@ -1,23 +1,23 @@
-# €ƒŒƒAƒ‚ƒu‚ÌoŒ»Šm—¦‚ğİ’èiƒ}ƒNƒŠÖ”j
-# value: 0.0-100.0‚Ì”’li¬”“_1Œ…‚Ü‚Å‘Î‰j
-# “à•”“I‚É‚Í10”{‚µ‚Ä•Û‘¶i15.5% ¨ 155j
+# æº–ãƒ¬ã‚¢ãƒ¢ãƒ–ã®å‡ºç¾ç¢ºç‡ã‚’è¨­å®šï¼ˆãƒã‚¯ãƒ­é–¢æ•°ï¼‰
+# value: 0.0-100.0ã®æ•°å€¤ï¼ˆå°æ•°ç‚¹1æ¡ã¾ã§å¯¾å¿œï¼‰
+# å†…éƒ¨çš„ã«ã¯10å€ã—ã¦ä¿å­˜ï¼ˆ15.5% â†’ 155ï¼‰
 
-# ƒXƒRƒAƒ{[ƒh‚ÉŠm—¦‚ğ•Û‘¶i10”{‚ÌƒXƒP[ƒ‹j
+# ã‚¹ã‚³ã‚¢ãƒœãƒ¼ãƒ‰ã«ç¢ºç‡ã‚’ä¿å­˜ï¼ˆ10å€ã®ã‚¹ã‚±ãƒ¼ãƒ«ï¼‰
 $scoreboard players set #global spmob.config.semi_rare_prob $(value)
 
-# ƒXƒgƒŒ[ƒW‚ÌƒŒƒAƒ‚ƒu”z—ñ[1]‚É‚à•Û‘¶i«—ˆ‚ÌŠg’£—pj
+# ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ã®ãƒ¬ã‚¢ãƒ¢ãƒ–é…åˆ—[1]ã«ã‚‚ä¿å­˜ï¼ˆå°†æ¥ã®æ‹¡å¼µç”¨ï¼‰
 $data modify storage spmob:config rare_mobs[1].probability set value $(value)
 
-# ”ÍˆÍƒ`ƒFƒbƒNi0-1000‚Ì”ÍˆÍ0.0%-100.0%j
+# ç¯„å›²ãƒã‚§ãƒƒã‚¯ï¼ˆ0-1000ã®ç¯„å›²ï¼0.0%-100.0%ï¼‰
 execute if score #global spmob.config.semi_rare_prob matches 1001.. run scoreboard players set #global spmob.config.semi_rare_prob 1000
 execute if score #global spmob.config.semi_rare_prob matches ..-1 run scoreboard players set #global spmob.config.semi_rare_prob 0
 
-# •\¦—p‚É10‚ÅŠ„‚éi®”•”‚Æ¬”•”‚ğŒvZj
+# è¡¨ç¤ºç”¨ã«10ã§å‰²ã‚‹ï¼ˆæ•´æ•°éƒ¨ã¨å°æ•°éƒ¨ã‚’è¨ˆç®—ï¼‰
 scoreboard players operation #temp spmob.temp = #global spmob.config.semi_rare_prob
 scoreboard players operation #temp_int spmob.temp = #temp spmob.temp
 scoreboard players operation #temp_int spmob.temp /= #10 spmob.const
 scoreboard players operation #temp_dec spmob.temp = #temp spmob.temp
 scoreboard players operation #temp_dec spmob.temp %= #10 spmob.const
 
-# ”ÍˆÍƒ`ƒFƒbƒNŒã‚Ì’l‚ğ•\¦i¬”“_1Œ…j
-tellraw @s [{"text":"[SpMob] ","color":"gold","bold":true},{"text":"€ƒŒƒAoŒ»Šm—¦‚ğİ’è: ","color":"white"},{"score":{"name":"#temp_int","objective":"spmob.temp"},"color":"yellow"},{"text":".","color":"yellow"},{"score":{"name":"#temp_dec","objective":"spmob.temp"},"color":"yellow"},{"text":"%","color":"yellow"}]
+# ç¯„å›²ãƒã‚§ãƒƒã‚¯å¾Œã®å€¤ã‚’è¡¨ç¤ºï¼ˆå°æ•°ç‚¹1æ¡ï¼‰
+tellraw @s [{"text":"[SpMob] ","color":"gold","bold":true},{"text":"æº–ãƒ¬ã‚¢å‡ºç¾ç¢ºç‡ã‚’è¨­å®š: ","color":"white"},{"score":{"name":"#temp_int","objective":"spmob.temp"},"color":"yellow"},{"text":".","color":"yellow"},{"score":{"name":"#temp_dec","objective":"spmob.temp"},"color":"yellow"},{"text":"%","color":"yellow"}]
