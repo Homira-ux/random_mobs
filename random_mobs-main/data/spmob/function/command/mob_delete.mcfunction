@@ -1,18 +1,18 @@
-# ƒXƒ|[ƒ“‚³‚ê‚½ƒ‚ƒu‚ğíœ‚·‚éƒRƒ}ƒ“ƒh
-# ƒZƒbƒg‚³‚ê‚½’Êíƒ‚ƒuAƒŒƒAƒ‚ƒuA€ƒŒƒAƒ‚ƒu‚ğ‚·‚×‚ÄƒLƒ‹‚µA
-# ‚»‚ÌŒã‚·‚×‚Ä‚ÌƒAƒCƒeƒ€‚ğƒLƒ‹‚µ‚Ü‚·
+# ã‚¹ãƒãƒ¼ãƒ³ã•ã‚ŒãŸãƒ¢ãƒ–ã‚’å‰Šé™¤ã™ã‚‹ã‚³ãƒãƒ³ãƒ‰
+# ã‚»ãƒƒãƒˆã•ã‚ŒãŸé€šå¸¸ãƒ¢ãƒ–ã€ãƒ¬ã‚¢ãƒ¢ãƒ–ã€æº–ãƒ¬ã‚¢ãƒ¢ãƒ–ã‚’ã™ã¹ã¦ã‚­ãƒ«ã—ã€
+# ãã®å¾Œã™ã¹ã¦ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’ã‚­ãƒ«ã—ã¾ã™
 
-# ƒƒCƒ“ƒ‚ƒu‚ğƒLƒ‹iƒXƒgƒŒ[ƒW‚©‚ç“Ç‚İ‚ñ‚Åƒ}ƒNƒÀsj
+# ãƒ¡ã‚¤ãƒ³ãƒ¢ãƒ–ã‚’ã‚­ãƒ«ï¼ˆã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ã‹ã‚‰èª­ã¿è¾¼ã‚“ã§ãƒã‚¯ãƒ­å®Ÿè¡Œï¼‰
 execute if data storage spmob:config mob_type_main run function spmob:internal/delete_main_mob with storage spmob:config
 
-# ƒŒƒAƒ‚ƒu‚ğƒLƒ‹
+# ãƒ¬ã‚¢ãƒ¢ãƒ–ã‚’ã‚­ãƒ«
 execute if data storage spmob:config rare_mobs[0].mob_type run function spmob:internal/delete_rare_mob with storage spmob:config rare_mobs[0]
 
-# €ƒŒƒAƒ‚ƒu‚ğƒLƒ‹
+# æº–ãƒ¬ã‚¢ãƒ¢ãƒ–ã‚’ã‚­ãƒ«
 execute if data storage spmob:config rare_mobs[1].mob_type run function spmob:internal/delete_semi_rare_mob with storage spmob:config rare_mobs[1]
 
-# ‚·‚×‚Ä‚ÌƒAƒCƒeƒ€‚ğƒLƒ‹
+# ã™ã¹ã¦ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’ã‚­ãƒ«
 kill @e[type=minecraft:item]
 
-# Š®—¹ƒƒbƒZ[ƒW
-tellraw @a [{"text":"[SpMob] ","color":"gold","bold":true},{"text":"ƒXƒ|[ƒ“‚³‚ê‚½ƒ‚ƒu‚ÆƒAƒCƒeƒ€‚ğíœ‚µ‚Ü‚µ‚½","color":"red"}]
+# å®Œäº†ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
+tellraw @a [{"text":"[SpMob] ","color":"gold","bold":true},{"text":"ã‚¹ãƒãƒ¼ãƒ³ã•ã‚ŒãŸãƒ¢ãƒ–ã¨ã‚¢ã‚¤ãƒ†ãƒ ã‚’å‰Šé™¤ã—ã¾ã—ãŸ","color":"red"}]

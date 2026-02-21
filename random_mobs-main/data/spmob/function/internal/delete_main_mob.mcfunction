@@ -1,5 +1,5 @@
-# ƒƒCƒ“ƒ‚ƒu‚ğíœiƒ}ƒNƒŠÖ”j
-# ƒXƒgƒŒ[ƒW‚©‚çmob_type_main‚ğ“Ç‚İæ‚èA‚»‚Ìƒ^ƒCƒv‚Ì‚·‚×‚Ä‚ÌƒGƒ“ƒeƒBƒeƒB‚ğƒLƒ‹
+# ãƒ¡ã‚¤ãƒ³ãƒ¢ãƒ–ã‚’å‰Šé™¤ï¼ˆãƒã‚¯ãƒ­é–¢æ•°ï¼‰
+# ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ã‹ã‚‰mob_type_mainã‚’èª­ã¿å–ã‚Šã€ãã®ã‚¿ã‚¤ãƒ—ã®ã™ã¹ã¦ã®ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£ã‚’ã‚­ãƒ«
 
-$execute if entity @e[type=$(mob_type_main)] run tellraw @a [{"text":"[SpMob] ","color":"gold","bold":true},{"text":"ƒƒCƒ“ƒ‚ƒu‚ğíœ: ","color":"white"},{"text":"$(mob_type_main)","color":"aqua"}]
+$execute if entity @e[type=$(mob_type_main)] run tellraw @a [{"text":"[SpMob] ","color":"gold","bold":true},{"text":"ãƒ¡ã‚¤ãƒ³ãƒ¢ãƒ–ã‚’å‰Šé™¤: ","color":"white"},{"text":"$(mob_type_main)","color":"aqua"}]
 $kill @e[type=$(mob_type_main)]
